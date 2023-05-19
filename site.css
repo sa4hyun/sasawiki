@@ -1,0 +1,187 @@
+@font-face {
+    font-family: abster;
+    src:url(../1.home/font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+  
+.content {
+    padding-top: 60px;
+}
+  
+
+.container .header{
+    width: 100%;
+    height: 60px;
+    margin:0px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.container .header {
+    position: fixed;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.container .nav ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container .nav ul li a:hover{
+    color: #1fdfdf;
+}
+
+.container .searchArea span{
+    font-size: 20px;
+}
+/*
+.searchArea{
+    background: gray;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.searchArea form {
+    display: flex;
+    align-items: center;
+}
+
+.searchArea > form > input{
+    border: none;
+    background: rgba(0,0,0,0);
+    color:#fff;
+    padding-left: 5px;
+}
+
+.searchArea > form > span{
+    width: 20px;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+*/
+.container .hero{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.material-symbols-outlined{
+    font-size: 10rem;
+}
+
+.lg-text{
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top:0;
+    right:-10px;
+    width:4px;
+    height:100%;
+    background-color:white;
+}
+
+#dynamic.active::after{
+    display:none;
+}
+
+.container .hero button{
+    background: none;
+    border:2px solid darkseagreen;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
+
+.container .header .form {
+    height: 10px;
+}
+
+.container .header .form{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.container .header .searchArea input{
+    border: none;
+    padding-left: 5px;
+}
+
+.container .header .searchArea input[type=text]{
+    background-color: #fff;
+    width:140px;
+    padding: 3px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 10px;
+    /*border-bottom-left-radius: 25px;
+    border-radius:25px 0 0 25px;
+    🔍︎
+    */
+}
+
+.box input[type="text"]::placeholder {
+    text-indent: 5px;
+  }  
+
+.container .header .searchArea input[type=submit]{
+    width: 50px;
+    background-color: rgb(0, 50, 165);
+    padding: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+    margin-left: -6px;
+}

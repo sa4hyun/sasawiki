@@ -33,5 +33,5 @@ function blink(){
 setInterval(blink, 500);
 
 function startwiki() {
-    window.location.href = "../2.wikisite/site.html";
+    window.location.href = "site.html";
 }

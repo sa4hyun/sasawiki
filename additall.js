@@ -1,7 +1,7 @@
 let target = document.querySelector("#dynamic");
 
 function randomString(){
-    let stringArr = ["SASAWIKI SITE | MADE BY NULL"];
+    let stringArr = ["QSAiN SITE | ASK TO SASA EXPERT"];
     let selectStirng = stringArr[Math.floor(Math.random() * stringArr.length)];
     let selectSringArr = selectStirng.split("");
     return selectSringArr;
@@ -31,3 +31,7 @@ function blink(){
     target.classList.toggle("active");
 }
 setInterval(blink, 500);
+
+function startwiki() {
+    window.location.href = "../2.wikisite/site.html";
+}
